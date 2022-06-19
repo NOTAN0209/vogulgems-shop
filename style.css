@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
- 
+
 main {
   max-width: 1000px;
   margin: auto;
@@ -54,4 +54,17 @@ label {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
- 
+
+ .modwind {
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+ }
+
+ @media (width: 800px, 1600px){
+   .modwind {
+     display: flex;
+     flex-direction: row;
+     justify-content:center;
+   }
+   }
