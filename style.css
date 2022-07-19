@@ -11,8 +11,14 @@
 box-sizing: border-box;
 }
 
+/*    font-family: 'Noto Sans', sans-serif;
+
+    font-family: 'Playfair Display', serif;*/
+
+
 body{
   margin: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .nav {
@@ -27,35 +33,56 @@ body{
 .nav__row {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
-.nav__logo {
-  width: 80px;
-  height: 40px;
-  background-color: #9966cc;
+.nav__logo{
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--main-black);
 }
+
+ .nav__logo a{
+   text-decoration:none;
+ }
+
+.nav__logo a:hover{
+  text-decoration: underline;
+  color: var(--main-orange);
+}
+
 
 .nav__list {
-  width: 260px;
-  height: 40px;
-  background-color: #47c256;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .nav__item {
-background-color: #47c256;
+margin-right:30px;
+}
+
+/*у последнего элемента нет отступа*/
+.nav__item:last-child {
+margin-right: 0;
 }
 
 .nav__link {
-background-color: #000;
+text-decoration: none;
+color:var(  --main-black);
 }
+
+.nav__link:hover{
+  color:var(--main-orange);
+}
+
 
 .nav__card {
   width: 40px;
   height: 40px;
   background-color: #ff0000;
 }
-
-
-
-
