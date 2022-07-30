@@ -252,7 +252,7 @@ color:var(  --main-black);
 .product__img {
   display: block;
   margin-bottom: 5px;
-  margin-left: 150px;
+
   width: 270px;
   height: 350px;
 }
@@ -263,7 +263,7 @@ color:var(  --main-black);
   font-weight: normal;
   font-size: 23px;
   line-height: 27px;
-  margin:5px 0 5px 150px;
+  margin:5px 0 5px 0;
   width: 270px;
   color: var(--main-black);
 }
@@ -272,7 +272,6 @@ color:var(  --main-black);
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
-  margin-left: 150px;
   width: 270px;
 }
 
