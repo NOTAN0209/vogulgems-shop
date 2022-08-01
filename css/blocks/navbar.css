@@ -1,0 +1,87 @@
+/*navigation */
+
+.nav {
+padding: 40px 0;
+}
+
+.nav__row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav__logo{
+text-decoration: none;
+font-family: 'Noto Sans', sans-serif;
+font-style: normal;
+font-size: 28px;
+line-height: 38px;
+color: var(--main-black);
+font-weight: bold;
+}
+
+.nav__logo a{
+ text-decoration:none;
+}
+
+.nav__logo a:hover{
+text-decoration: underline;
+color: var(--main-orange);
+}
+
+.nav__list {
+display: flex;
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.nav__item {
+margin-right:30px;
+font-size: 25px;
+}
+
+/*у последнего элемента нет отступа*/
+.nav__item:last-child {
+margin-right: 0;
+}
+
+.nav__link {
+
+text-decoration: none;
+color:var(  --main-black);
+}
+
+.nav__link:hover{
+color:var(--main-orange);
+}
+
+.nav__card  {
+
+}
+
+.nav__card_link{
+position: relative;
+margin: 5px;
+left: -5px;
+display: inline-block;
+right: 25px;
+}
+
+.nav__card-number{
+position: absolute;
+border-radius: 50%;
+color:var(--main-white);
+background-color: var(--main-purpure);
+font-weight: bold;
+font-size: 15px;
+width: 20px;
+height: 20px;
+text-align: center;
+line-height: 20px;
+
+}
+
+.nav__card > span{
+margin-left: 20px;
+}
