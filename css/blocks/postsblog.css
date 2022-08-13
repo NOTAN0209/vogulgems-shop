@@ -14,7 +14,9 @@ flex-grow: 1;
 
 .post__img{
 padding-right: 30px;
-
+max-width: 370px;
+padding-bottom: 50px;
+margin-left: 115px;
 }
 
 .post__content{

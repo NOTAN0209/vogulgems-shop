@@ -1,0 +1,38 @@
+.section-sub{
+  padding-top: 45px;
+  padding-bottom: 100px;
+
+}
+
+.section-sub__title{
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  margin-bottom: 10px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.section-sub__desc{
+  font-style:oblique;
+  font-weight:100;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.section-sub__header{
+margin: 0 auto;
+}
+
+.section-sub__row{
+  display: flex;
+  flex-direction: row;
+}
+
+.section-sub__img{
+max-width: 650px;
+margin: 0 auto;
+padding-right: 50px;
+}
