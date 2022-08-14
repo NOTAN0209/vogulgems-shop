@@ -1,0 +1,27 @@
+.section-sub__form{
+
+}
+
+.section-sub__input{
+  height: 42px;
+  width: 230px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid var(--main-grey);
+  background: var(--main-white);
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height:1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section-sub__input:hover{
+  background: var(--main-purpure);
+}
+
+.section-sub__submit{
+
+}
