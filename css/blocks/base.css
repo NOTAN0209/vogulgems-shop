@@ -6,6 +6,7 @@
   --main-white: #fff;
   --main-black: #000;
   --main-grey: #8e8e8e;
+  --main-purpure2:rgba(247,36,99,0.5);
 }
 
 *, *::after, *::before{
@@ -18,6 +19,8 @@ body{
 }
 
 .container {
-  width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }

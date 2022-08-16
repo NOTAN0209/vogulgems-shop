@@ -13,8 +13,12 @@
 @import "./css/blocks/section-sub.css";
 @import "./css/blocks/section-form.css";
 @import "./css/blocks/footer.css";
+@import "./css/blocks/menu-icon.css";
 
-
+/*nav*/
+ header,.featured,.info-section,.newproducts,.new-section,.section-blog,.section-sub,footer{
+  display: none;
+}
 
 /*    font-family: 'Noto Sans', sans-serif;
     font-family: 'Playfair Display', serif;*/
