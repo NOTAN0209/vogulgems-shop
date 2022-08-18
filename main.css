@@ -16,7 +16,8 @@
 @import "./css/blocks/menu-icon.css";
 
 /*nav*/
- header,.featured,.info-section,.newproducts,.new-section,.section-blog,.section-sub,footer{
+ /*header*/
+ .featured,.info-section,.newproducts,.new-section,.section-blog,.section-sub,footer{
   display: none;
 }
 

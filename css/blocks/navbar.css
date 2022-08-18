@@ -1,12 +1,12 @@
 /*navigation */
 
 .nav {
-padding: 20px 0;
+  padding: 20px 0;
 }
 
 @media (min-width:992px){
 .nav{
-  margin: 40px 0;
+  margin: 0 auto;
 }
 }
 
@@ -43,7 +43,6 @@ padding: 20px 0;
 }
 
 .nav__list{
-  /*display: none;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -54,6 +53,18 @@ padding: 20px 0;
   padding: 0;
   color: var(--main-white);
   z-index: 9;
+}
+
+@media (min-width:992px){
+  .nav__list{
+    list-style-type: none;
+    display: flex;
+    position: static;
+    width: auto;
+    margin: 0 auto;
+    background-color: var(--main-white);
+    color:var(--main-black);
+}
 }
 
 .nav__list-holder{
@@ -67,16 +78,17 @@ padding: 20px 0;
   z-index: 9;
 }
 
-.nav__list-holder--visible{
+.nav__list-holder-visible{
   display: block;
 }
-/*
-.nav__list {
-display: flex;
-padding: 0;
-margin: 0;
-list-style-type: none;
-}*/
+
+@media (min-width:992px){
+  .nav__list-holder{
+    display:inline-block;
+    position: static;
+    background-color: none;
+    }
+}
 
 .nav__item {
   display: block;
@@ -88,13 +100,15 @@ list-style-type: none;
 @media (min-width:992px){
   .nav__item{
     margin-right: 30;
+    border-bottom: none;
+    background-color: none;
+    margin: 10px 50px;
 }
 }
-
 
 /*у последнего элемента нет отступа*/
 .nav__item:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .nav__link {
@@ -107,8 +121,9 @@ margin-right: 0;
 }
 
 .nav__card  {
+  margin-top:5px;
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 @media (min-width:992px){

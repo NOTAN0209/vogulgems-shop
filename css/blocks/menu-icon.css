@@ -9,6 +9,12 @@
   position: relative;
 }
 
+@media (min-width:992px){
+.menu-icon-wrapper{
+  display: none;
+}
+}
+
 .menu-icon {
   position: relative;
   width: 30px;
