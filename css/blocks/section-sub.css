@@ -4,6 +4,13 @@
 
 }
 
+@media (max-width:1024px){
+.section-sub{
+  padding-top: 25px;
+  padding-bottom: 80px;
+  }
+}
+
 .section-sub__title{
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
@@ -14,12 +21,25 @@
   text-align: center;
 }
 
+
+@media (max-width:1024px){
+.section-sub__title{
+  font-size: 40px;
+  }
+}
 .section-sub__desc{
   font-style:oblique;
   font-weight:100;
   font-size: 40px;
   line-height: 50px;
   text-align: center;
+}
+
+@media (max-width:1024px){
+.section-sub__desc{
+  font-size: 25px;
+  line-height: 35px;
+  }
 }
 
 .section-sub__header{
@@ -35,4 +55,18 @@ margin: 0 auto;
 max-width: 650px;
 margin: 0 auto;
 padding-right: 50px;
+}
+
+@media (max-width:1024px){
+.section-sub__img{
+  width: 480px;
+  height: 580px;
+  padding: 0px;
+  }
+}
+
+@media (max-width:1024px){
+.section-sub__img:last-child{
+  padding-left: 40px;
+  }
 }
