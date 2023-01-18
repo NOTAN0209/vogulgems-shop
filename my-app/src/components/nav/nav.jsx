@@ -1,6 +1,9 @@
-import react from ''
-import "./nav.css"
+import React from "react";
+import './nav.css';
 
+function navigation (){
+
+  return (
 <nav class ="nav">
     <div class ="container">
       <div class ="navRow">
@@ -35,3 +38,6 @@ import "./nav.css"
       </div>
     </div>
 </nav>
+)
+}
+export default navigation

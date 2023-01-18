@@ -1,7 +1,10 @@
-import "./header.css"
+import React from "react";
+import './header.css';
 
-  <header class="header">
-    <div class="container">
+
+function header() {
+
+return(
       <div class="headerRow">
         <div class="headerContent">
           <h1 class="headerTitle">VogulGems</h1>
@@ -29,5 +32,7 @@ import "./header.css"
           </a>
         </div>
       </div>
-    </div>
-  </header>
+)
+}
+
+export default header
