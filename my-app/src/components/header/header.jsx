@@ -2,9 +2,12 @@ import React from "react";
 import './header.css';
 
 
+
 function header() {
 
 return(
+  <header class="header">
+    <div class="container">
       <div class="headerRow">
         <div class="headerContent">
           <h1 class="headerTitle">VogulGems</h1>
@@ -19,19 +22,21 @@ return(
 
         <div class="headerPhoto">
           <a href="">
-           <img src="./img/logo/pend.jpg" alt = "Кулон" class="headerPhotoPendant" />
+            <img src="../img/logo/pend.jpg" alt = "Кулон" class="headerPhotoPendant" />
           </a>
           <a href="">
-           <img src="./img/logo/ring.jpg" alt = "Кольцо" class="headerPhotoRing" />
+            <img src="./img/logo/ring.jpg" alt = "Кольцо" class="headerPhotoRing" />
           </a>
           <a href="">
-           <img src="./img/logo/set.jpg" alt = "Комплект" class="headerPhotoSet" />
+            <img src="./img/logo/set.jpg" alt = "Комплект" class="headerPhotoSet" />
           </a>
           <a href="">
-           <img src="./img/logo/man.jpg" alt = "Брошь" class="headerPhotoBroosh" />
+            <img src="./img/logo/man.jpg" alt = "Брошь" class="headerPhotoBroosh" />
           </a>
         </div>
       </div>
+    </div>
+</header>
 )
 }
 

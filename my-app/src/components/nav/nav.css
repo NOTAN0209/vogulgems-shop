@@ -1,7 +1,9 @@
 /*navigation */
 
 .nav {
-    padding: 20px 0;
+
+    position: relative;
+    top:0px;
   }
   
   @media (min-width:992px){
