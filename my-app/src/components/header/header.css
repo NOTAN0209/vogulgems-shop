@@ -36,6 +36,7 @@
     font-size: 60px;
     line-height: 32px;
     margin-bottom: 20px;
+    text-decoration: none;
   }
   
   @media (max-width:1024px){
@@ -146,4 +147,7 @@
   color: var(--main-black);
 }
 
-  
+a:hover {
+  color: var(--main-purpure);
+
+}
