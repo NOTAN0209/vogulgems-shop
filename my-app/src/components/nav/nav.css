@@ -1,61 +1,49 @@
 /*navigation */
 
+a{
+  text-decoration: none;
+}
 .nav {
-
     position: relative;
-    top:0px;
-  }
+    width: 1500px;
+    height: 50px;
+    left: 100px;
+    right:100px;
+   
+}
   
-  @media (min-width:992px){
-  .nav{
-    margin: 0 auto;
-  }
-  }
-  
-  .navRow {
+.navRow {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-  }
+    width: 1500px;
+    height: 50px;
+}
   
-  .navLogo a{
-    text-decoration: none;
+.navLogo{
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-size: 28px;
     line-height: 38px;
     color: var(--main-black);
     font-weight: bold;
-    margin-right: 20px;
-  }
+    position: relative;
+    top:18px;
+}
   
-  @media (min-width:992px){
-  .navLogo a{
-    margin-right: 83px;
-  }
-  }
-  
-  .navLogo a {
-   text-decoration:none;
-  }
-  
-  .navLogo a:hover{
-    text-decoration: underline;
-    color: var(--main-orange);
-  }
-  
-  .navList{
-    position: fixed;
+.navList{
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 260px;
+    width: 1000px;
+    height: 50px;
     background-color: var(--main-black);
     margin: 0;
     padding: 0;
     color: var(--main-white);
     z-index: 9;
-  }
+}
   
   @media (min-width:992px){
     .navList{
@@ -96,7 +84,7 @@
     display: block;
     padding: 20px 10px;
     font-size: 25px;
-    border-bottom: 1px solid var(--main-red);
+  width: 100px;
   }
   
   @media (min-width:992px){
@@ -107,7 +95,8 @@
       margin: 10px 50px;
   }
   }
-  
+
+
   /*у последнего элемента нет отступа*/
   .navItem:last-child {
     margin-right: 0;
@@ -120,6 +109,11 @@
   
   .navLnk:hover{
     color:var(--main-orange);
+  }
+
+  .navSelect{
+    width: 200px;
+    height: 30px;
   }
   
   .navCard  {
@@ -160,3 +154,5 @@
     margin-left: 20px;
   }
   
+
+

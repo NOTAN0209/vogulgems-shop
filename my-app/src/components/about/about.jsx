@@ -9,7 +9,7 @@ function About (){
 
 return (
 <div class ="about">
-    <Navigation />
+  <Navigation />
       <div class="container">
         <div class="aboutHeader">
           <h2 class="aboutTitle">История создания мастерской VogulGems</h2>
@@ -23,36 +23,28 @@ return (
           </div>
         </div>
 
-        <div class="aboutRow">
-          <a href="#" class="aboutLink">
-            <img src="./img/person/per5.jpg" alt="Владимир и Михаил" class="aboutImg" />
-          </a>
-          <a href="#" class="aboutLink">
-            <img src="./img/person/per6.jpg" alt="Владимир и Михаил" class="aboutImg" />
-          </a>
-        </div>
-
-        <div class="postsWrapper">
-          <div class="post">
-            <img src="./img/person/per1.jpg" alt="Участник мастерской" class="postImg" />
+        <div class="aboutColumn">
+ 
+        <div class="aboutPost">
+            <img src="./img/person/per1.jpg" alt="Участник мастерской" class="aboutImg" />
             <div class="postContent">
               <h4 class="postTitle">Михаил Карягин</h4>
               <p class="postText">Мастер по обработке металла и основатель мастерской</p>
               <a href="#" class="postReadMore">Подробнее</a>
             </div>
-          </div>
+          </div>  
 
-          <div class="post">
-            <img src="./img/person/per2.jpg" alt="Участник мастерской" class="postImg" />
+          <div class="aboutPost">
+            <img src="./img/person/per2.jpg" alt="Участник мастерской" class="aboutImg" />
             <div class="postContent">
                 <h4 class="postTitle">Сихряев Владимир</h4>
                 <p class="postText">Мастер по обработке камня и основатель мастерской</p>
                 <a href="#" class="postReadMore">Подробнее</a>
             </div>
-          </div>
-
-          <div class="post">
-            <img src="./img/person/per3.jpg" alt="Выставки-ярмарки" class="postImg" />
+          </div>  
+ 
+          <div class="aboutPost">
+            <img src="./img/person/per3.jpg" alt="Выставки-ярмарки" class="aboutImg" />
             <div class="postContent">
               <h4 class="postTitle">Участвуем на выставках</h4>
               <p class="postText">Минералогические и ювелирные ярмарки</p>
@@ -60,16 +52,22 @@ return (
             </div>
           </div>
 
-          <div class="post">
-            <img src="./img/person/per4.jpg" alt="Добыча минералов" class="postImg" />
+          <div class="aboutPost">
+            <img src="./img/person/per4.jpg" alt="Добыча минералов" class="aboutImg" />
             <div class="postContent">
               <h4 class="postTitle">Добываем сырье</h4>
               <p class="postText">Добыча минералов по всей стране</p>
               <a href="#" class="postReadMore">Подробнее</a>
             </div>
-          </div>
-        </div>
-        
+          </div> 
+
+            <a href="#" class="aboutLink">
+            <img src="./img/person/per5.jpg" alt="Владимир и Михаил" class="aboutImg" />
+          </a>
+          <a href="#" class="aboutLink">
+            <img src="./img/person/per6.jpg" alt="Владимир и Михаил" class="aboutImg" />
+          </a>      
+        </div> 
     </div>
   <Footer />
 </div>  

@@ -1,0 +1,87 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 270px;
+    margin: 30px 0;
+  }
+  
+  @media (max-width:1024px){
+    .product {
+    text-align: center;
+    left: 0px;
+    margin: 10px 0;
+    }
+  }
+  
+   .productLink{
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s ease-in;
+  }
+  
+  .productLink:hover{
+    opacity: 0.8;
+  }
+  
+  .productImg {
+    display: block;
+    margin-bottom: 5px;
+    width: 270px;
+    height: 350px;
+  }
+  
+  @media (max-width:1024px){
+    .productImg {
+      width: 220px;
+      height: 300px;
+      gap:10px;
+    }
+  }
+  
+  .productTitle {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+    margin:5px 0 5px 0;
+    width: 270px;
+    height: 90px;
+    color: var(--main-black);
+  }
+  
+  @media (max-width:1024px){
+    .productTitle {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    }
+  }
+  
+  .productPrice {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    width: 220px;
+    text-align: center;
+  }
+  
+  @media (max-width:1024px){
+    .productPrice {
+    font-size: 18px;
+    }
+  }
+  
+  
+  .productOldPrice {
+    color: var(--main-grey);
+    margin-right: 10px;
+  }
+  
+  .productPriceNew{
+    color: var(--main-purpure);
+    font-weight: bold;
+  }

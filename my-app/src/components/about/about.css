@@ -1,17 +1,16 @@
 .about{
-    padding-top: 45px;
-    padding-bottom: 100px;
-  
+  position: relative;
+
   }
   
-  @media (max-width:1024px){
+@media (max-width:1024px){
   .about{
     padding-top: 25px;
     padding-bottom: 80px;
     }
-  }
+}
   
-  .aboutTitle{
+.aboutTitle{
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -19,155 +18,126 @@
     margin-bottom: 10px;
     line-height: 56px;
     text-align: center;
-  }
+}
   
-  
-  @media (max-width:1024px){
+@media (max-width:1024px){
   .aboutTitle{
     font-size: 40px;
     }
-  }
-  .aboutDesc{
+}
+
+.aboutDesc{
     font-weight:100;
     font-size: 25px;
     line-height: 40px;
     text-align: center;
-  }
+}
   
-  @media (max-width:1024px){
+@media (max-width:1024px){
   .aboutDesc{
     font-size: 25px;
     line-height: 35px;
     }
-  }
+}
   
-  .aboutHeader{
+.aboutHeader{
   margin: 0 auto;
-  }
+}
   
-  .aboutRow{
-    display: flex;
-    flex-direction: row;
-  }
+.aboutColumn{
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  position: relative;
+  left: 250px;
+}
   
-  .aboutImg{
-  width: 650px;
-  height: 650px;
+.aboutImg{
+  width: 300px;
+  height: 400px;
   margin: 0 auto;
-  padding-right: 50px;
-  }
+ 
+}
   
-  @media (max-width:1024px){
+@media (max-width:1024px){
   .aboutImg{
-    width: 480px;
-    height: 580px;
-    padding: 0px;
+ 
     }
-  }
+}
   
-  @media (max-width:1024px){
+@media (max-width:1024px){
   .aboutImg:last-child{
-    padding-left: 40px;
+ 
     }
-  }
+}
   
+.aboutPost{
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+    
+@media (max-width:1024px){
+  .aboutPost{
+    max-width: 400px;
+  }
+}
 
-  .posts-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap:40px;
-    }
+.postContent{
+  max-width: 370px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
     
-    @media (max-width:1024px){
-    .posts-wrapper{
-      row-gap:20px;
-      }
-    }
+.postTitle{
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color:var(-Main-black);
+}
     
-    .post{
-    max-width: 570px;
-    display: flex;
-    justify-content:flex-start;
-    flex-grow: 1;
-    }
+.postText{
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight:normal;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(-Main-grey);
+}
     
-    @media (max-width:1024px){
-    .post{
-      max-width: 400px;
-      }
-    }
-    
-    .postImg{
-      padding-right: 30px;
-      width: 500px;
-      height: 500px;
-      padding-bottom: 50px;
-      margin-left: 115px;
-    }
-    
-    @media (max-width:1024px){
-    .postImg{
-      width: 220px;
-      height: 300px;
-      margin: 0px;
-      padding: 10px;
-      }
-    }
-    
-    .postContent{
-      max-width: 370px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .postTitle{
-      font-family: 'Playfair Display', serif;
-      margin: 0;
-      margin-bottom: 10px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 30px;
-      color:var(-Main-black);
-    }
-    
-    .postText{
-      margin: 0 0 10px;
-      font-style: normal;
-      font-weight:normal;
-      font-size: 18px;
-      line-height: 1.3;
-      color: var(-Main-grey);
-    }
-    
-    .postReadMore{
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      color:var(-Main-black);
-      text-decoration: none;
-    }
-    
+.postReadMore{
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color:var(-Main-black);
+  text-decoration: none;
+}
+  /*  
     .postReadMore::after{
       content: "";
       display: inline-block;
       width: 24px;
       height: 24px;
-      background-image: url('./../../img/logo/braket.png');
+      background-image: url('./img/logo/braket.png');
       background-position: center;
       background-size: auto;
       margin-left: 2px;
       vertical-align: text-top;
       transition: margin 0.2s easy-in;
     }
+    */
+
+.postReadMore:hover{
+  text-decoration: underline;
+}
     
-    .postReadMore:hover{
-      text-decoration: underline;
-    }
-    
-    .postReadMore:hover::after{
-      margin-left: 10px;
-    }
+.postReadMore:hover::after{
+  margin-left: 10px;
+}
     
