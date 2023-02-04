@@ -1,5 +1,6 @@
 import React from "react";
 import './mosaic.css';
+import mosaics from "./mosaic.js"
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
 
@@ -7,49 +8,17 @@ function Mosaic(){
      return(
         <div className="mosaic">
             <Navigation />
-            <a href="#" class="productLink">
-            <div class="product">
-              <img src="./img/mosaic/mos.jpg"  alt="Каменная мозаика" class="productImg" />
-              <h4 class="productTitle">Брошь "Женщина"</h4>
-              <div class="productPrice">
-                <span class="productOldPrice"><s>4000₽</s></span>
-                <span class="productPriceNew">3200₽</span>
+            {mosaics.map((mosaic) => ( 
+            <a href="#" class="productLink" key = {mosaic.row}>
+              <div class="product">      
+                <img src={mosaic.src} alt={mosaic.alt} class="productImg" />
+                <h4 class="productTitle">{mosaic.title} </h4>
+                <div class="productPrice">
+                  <span class="productPriceNew">{mosaic.price}</span>
+                </div>
               </div>
-            </div>
-          </a>
-
-          <a href="#" class="productLink">
-            <div class="product">
-              <img src="./img/mosaic/mos1.jpg"  alt="Каменная мозаика" class="productImg" />
-              <h4 class="productTitle">Брошь "Попугай"</h4>
-              <div class="productPrice">
-                <span class="productOldPrice"><s>4000₽</s></span>
-                <span class="productPriceNew">3200₽</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="productLink">
-            <div class="product">
-              <img src="./img/mosaic/mos2.jpg"  alt="Каменная мозаика" class="productImg" />
-              <h4 class="productTitle">Брошь "Синий кит" </h4>
-              <div class="productPrice">
-                <span class="productOldPrice"><s>4000₽</s></span>
-                <span class="productPriceNew">3200₽</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="productLink">
-            <div class="product">
-              <img src="./img/mosaic/mos3.jpg"  alt="Каменная мозаика" class="productImg" />
-              <h4 class="productTitle">Брошь "Кашалот" </h4>
-              <div class="productPrice">
-                <span class="productOldPrice"><s>4000₽</s></span>
-                <span class="productPriceNew">3200₽</span>
-              </div>
-            </div>
-          </a>
+            </a>
+            ))} 
           <Footer/>
         </div>
      )

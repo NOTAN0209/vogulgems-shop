@@ -5,28 +5,26 @@ import './footer.css';
 
 function Footer (){
     return(
-<footer class="footer">
-  <div class="container">
-    <div class="footerColumn">
-      <nav class="footerNav">
+<footer className="footer">
+  <div className="container">
+    <div className="footerColumn">
+      <nav className="footerNav">
         <a href="#">Личный кабинет</a>
         <a href="#">Наши контакты</a>
         <a href="#">Условия сотрудничества</a>
       </nav>
 
-      <div class="footerSocial">
-        <a href="https://vk.com/vogulgems" class="footerLink" target="_blank">
-          <img src= "./img/social/contact1.png" alt="Мы в контакте" class="footerImg" />
+      <div className="footerSocial">
+        <a href="https://vk.com/vogulgems" className="footerLink" target="_blank">
+          <img src= "./img/social/contact1.png" alt="Мы в контакте" className="footerImg" />
         </a>
-        <a href="https://www.instagram.com/vogulgems/" class="footerLink" target="_blank">
-          <img src= "./img/social/contact2.png" alt="Мы в instagram" class="footerImg" />
-        </a>
-        <a href="https://www.livemaster.ru/artelvogul" class="footerLink" target="_blank">
-          <img src="./img/social/contact3.jpg" alt="Мы на ярмарке мастеров" class="footerImg" />
+      
+        <a href="https://www.livemaster.ru/artelvogul" className="footerLink" target="_blank">
+          <img src="./img/social/contact3.jpg" alt="Мы на ярмарке мастеров" className="footerImg" />
         </a>
       </div>
 
-      <div class="footerCopyright">
+      <div className="footerCopyright">
         <p>@VogulGems.Интернет-магазин создан Карягиным Михаилом</p>
       </div>
     </div>

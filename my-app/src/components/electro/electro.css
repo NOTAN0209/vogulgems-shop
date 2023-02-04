@@ -75,12 +75,6 @@
     }
   }
   
-  
-  .productOldPrice {
-    color: var(--main-grey);
-    margin-right: 10px;
-  }
-  
   .productPriceNew{
     color: var(--main-purpure);
     font-weight: bold;

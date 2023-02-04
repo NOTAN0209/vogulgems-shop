@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import abouts from "./about.js"
 import Footer from "../footer/footer";
 import Navigation from '../nav/nav.jsx';
 
@@ -8,12 +9,12 @@ import Navigation from '../nav/nav.jsx';
 function About (){
 
 return (
-<div class ="about">
+<div className ="about">
   <Navigation />
-      <div class="container">
-        <div class="aboutHeader">
-          <h2 class="aboutTitle">История создания мастерской VogulGems</h2>
-          <div class="aboutDesc">
+      <div className="container">
+        <div className="aboutHeader">
+          <h2 className="aboutTitle">История создания мастерской VogulGems</h2>
+          <div className="aboutDesc">
             <p>Нашей мастерской уже больше 10 лет.
               За это время состав команды время от времени менялся.
               К нам приходили талантливые художники, но потом уходили в одиночное плаванье.
@@ -23,50 +24,16 @@ return (
           </div>
         </div>
 
-        <div class="aboutColumn">
- 
-        <div class="aboutPost">
-            <img src="./img/person/per1.jpg" alt="Участник мастерской" class="aboutImg" />
-            <div class="postContent">
-              <h4 class="postTitle">Михаил Карягин</h4>
-              <p class="postText">Мастер по обработке металла и основатель мастерской</p>
-              <a href="#" class="postReadMore">Подробнее</a>
-            </div>
-          </div>  
-
-          <div class="aboutPost">
-            <img src="./img/person/per2.jpg" alt="Участник мастерской" class="aboutImg" />
-            <div class="postContent">
-                <h4 class="postTitle">Сихряев Владимир</h4>
-                <p class="postText">Мастер по обработке камня и основатель мастерской</p>
-                <a href="#" class="postReadMore">Подробнее</a>
-            </div>
-          </div>  
- 
-          <div class="aboutPost">
-            <img src="./img/person/per3.jpg" alt="Выставки-ярмарки" class="aboutImg" />
-            <div class="postContent">
-              <h4 class="postTitle">Участвуем на выставках</h4>
-              <p class="postText">Минералогические и ювелирные ярмарки</p>
-              <a href="#" class="postReadMore">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="aboutPost">
-            <img src="./img/person/per4.jpg" alt="Добыча минералов" class="aboutImg" />
-            <div class="postContent">
-              <h4 class="postTitle">Добываем сырье</h4>
-              <p class="postText">Добыча минералов по всей стране</p>
-              <a href="#" class="postReadMore">Подробнее</a>
-            </div>
-          </div> 
-
-            <a href="#" class="aboutLink">
-            <img src="./img/person/per5.jpg" alt="Владимир и Михаил" class="aboutImg" />
-          </a>
-          <a href="#" class="aboutLink">
-            <img src="./img/person/per6.jpg" alt="Владимир и Михаил" class="aboutImg" />
-          </a>      
+        <div className="aboutColumn">
+        {abouts.map((about) => (
+              <div className="aboutPost" key = {about.row}>
+                  <img src={about.src} alt={about.alt} className="aboutImg" />
+                  <div className="postContent">
+                    <h4 className="postTitle">{about.title}</h4>
+                    <p className="postText">{about.text}</p>
+                  </div>
+              </div>
+            ))}        
         </div> 
     </div>
   <Footer />
