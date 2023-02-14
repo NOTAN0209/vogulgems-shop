@@ -1,26 +1,28 @@
-.header {
-  position: relative;
-  top: 70px;
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.headerRow{
+.mainRow{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    top:150px; 
+}
   
-  }
-  
-  .headerContent{
+  .mainContent{
    position: absolute;
    max-width: 670px;
-   left: 0;
+   left: -70px;
    top:50%;
    transform: translateY(-50%);
   }
   
   @media (max-width:1024px){
-    .headerContent{
+    .mainContent{
       margin-top: 100px;
       position: absolute;
       left: 50%;
@@ -29,7 +31,7 @@
     }
   }
   
-  .headerTitle{
+  .mainTitle{
     margin: 0;
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -40,13 +42,13 @@
   }
   
   @media (max-width:1024px){
-    .headerTitle{
+    .mainTitle{
       font-size: 40px;
       text-align: center;
     }
   }
   
-  .headerText{
+  .mainText{
     max-width: 500px;
     height:70px;
     text-transform: uppercase;
@@ -57,47 +59,49 @@
     text-align: left;
   }
   @media (max-width:1024px){
-    .headerBtn{
+    .mainBtn{
       display: none;
     }
   }
   
-  .headerPhoto{
+  .mainPhoto{
+    position: relative;
     display: grid;
     grid-template-columns: 300px 300px;
     position: relative;
     left:0px;
     column-gap: 10px;
     row-gap: 10px;
+    top:100px;
   }
   
   
 
   
   @media (max-width:1024px){
-    .headerPhoto{
+    .mainPhoto{
       display: none;
       visibility: hidden;
     }
   }
 
 
-.headerPhotoPendant{
+.mainPhotoPendant{
   width: 300px;
   height: 400px;
 }
 
-.headerPhotoRing{
+.mainPhotoRing{
   width: 300px;
   height: 400px;
 }
 
-.headerPhotoSet{
+.mainPhotoSet{
   width: 300px;
   height: 400px;
 }
 
-.headerPhotoBroosh{
+.mainPhotoBroosh{
   width: 300px;
   height: 400px;
 }

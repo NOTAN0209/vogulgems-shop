@@ -24,7 +24,7 @@ function Pendants(){
                 </a>
                 ))} 
         <Footer />
-</div>
+    </div>
 )
 }
 

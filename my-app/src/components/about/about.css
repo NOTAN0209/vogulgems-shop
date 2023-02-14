@@ -1,7 +1,10 @@
 .about{
-  position: relative;
-
-  }
+  position: absolute;
+  width: 1300px;
+  height: 100%;
+  left: 0px;
+  right:0px;
+}
   
 @media (max-width:1024px){
   .about{
@@ -27,6 +30,7 @@
 }
 
 .aboutDesc{
+  width: 1200px;
     font-weight:100;
     font-size: 25px;
     line-height: 40px;
@@ -41,6 +45,9 @@
 }
   
 .aboutHeader{
+  position: relative;
+  top:150px;
+  left:100px;
   margin: 0 auto;
 }
   
@@ -51,7 +58,8 @@
   column-gap: 25px;
   row-gap: 25px;
   position: relative;
-  left: 250px;
+  left: 400px;
+  top:150px;
 }
   
 .aboutImg{
