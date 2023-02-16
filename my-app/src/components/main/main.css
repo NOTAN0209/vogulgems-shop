@@ -13,97 +13,106 @@
     top:150px; 
 }
   
+.mainContent{
+  position: absolute;
+  max-width: 670px;
+  left: -70px;
+  top:50%;
+  transform: translateY(-50%);
+}
+  
+@media (max-width:1024px){
   .mainContent{
-   position: absolute;
-   max-width: 670px;
-   left: -70px;
-   top:50%;
-   transform: translateY(-50%);
+    margin-top: 100px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
   }
+}
   
-  @media (max-width:1024px){
-    .mainContent{
-      margin-top: 100px;
-      position: absolute;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%)
-    }
-  }
+.mainTitle{
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
   
+@media (max-width:1024px){
   .mainTitle{
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-size: 60px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
   }
+}
   
-  @media (max-width:1024px){
-    .mainTitle{
-      font-size: 40px;
-      text-align: center;
-    }
-  }
-  
-  .mainText{
-    max-width: 500px;
-    height:70px;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 1.3;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    text-align: left;
-  }
-  @media (max-width:1024px){
-    .mainBtn{
-      display: none;
-    }
-  }
-  
-  .mainPhoto{
-    position: relative;
-    display: grid;
-    grid-template-columns: 300px 300px;
-    position: relative;
-    left:0px;
-    column-gap: 10px;
-    row-gap: 10px;
-    top:100px;
-  }
-  
-  
+.mainText{
+  position: relative;
+  max-width: 500px;
+  height:70px;
+  text-transform: uppercase;
+  font-size: 23px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: left;
+}
 
-  
-  @media (max-width:1024px){
-    .mainPhoto{
-      display: none;
-      visibility: hidden;
-    }
+
+.mainBtn{
+  position: relative;
+  top:100px;
+}
+
+@media (max-width:1024px){
+  .mainBtn{
+    display: none;
   }
+}
+  
+.mainPhoto{
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  position: relative;
+  left:0px;
+  column-gap: 10px;
+  row-gap: 10px;
+  top:100px;
+}
+  
+@media (max-width:1024px){
+  .mainPhoto{
+    display: none;
+    visibility: hidden;
+  }
+}
 
 
 .mainPhotoPendant{
   width: 300px;
   height: 400px;
+  border-radius: 8%;
 }
 
 .mainPhotoRing{
   width: 300px;
   height: 400px;
+  border-radius: 8%;
 }
 
 .mainPhotoSet{
   width: 300px;
   height: 400px;
+  border-radius: 8%;
 }
 
 .mainPhotoBroosh{
   width: 300px;
   height: 400px;
+  border-radius: 8%;
 }
 
 
@@ -124,34 +133,14 @@
   text-decoration:none;
 }
 
+
 .button:hover{
-  box-shadow: 0px 4px 15px rgb(255, 0, 0);
-}
-
-.button-outline{
-  display: inline-block;
-  font-family: 'Playfair Display', serif;
-  padding: 20px 40px;
-  color: var(--main-white);
-  border: 1px solid var(--main-black);
-  background-color: var(--main-purpure);
-  border-radius: 4px;
-  font-style: normal;
-  font-weight:bold;
-  line-height: 1;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+ color: var(--main-black);
   transition: background-color 0.2s ease-in, color  0.2s ease-in;
-  }
-
-.button-outline:hover{
-  background-color: var(--main-grey);
-  color: var(--main-black);
 }
+
 
 a:hover {
-  color: var(--main-purpure);
+  color:var(--main-purpure);
 
 }

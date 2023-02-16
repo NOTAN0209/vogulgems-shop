@@ -1,5 +1,6 @@
 import React from "react";
 import './footer.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -9,10 +10,11 @@ function Footer (){
   <div className="container">
     <div className="footerColumn">
       <nav className="footerNav">
-        <a href="#">Личный кабинет</a>
+      <Link to="/about" className = ""> <a href="#">О нас</a></Link>
         <a href="#">Наши контакты</a>
         <a href="#">Условия сотрудничества</a>
       </nav>
+
 
       <div className="footerSocial">
         <a href="https://vk.com/vogulgems" className="footerLink" target="_blank">
@@ -20,7 +22,7 @@ function Footer (){
         </a>
       
         <a href="https://www.livemaster.ru/artelvogul" className="footerLink" target="_blank">
-          <img src="./img/social/contact3.jpg" alt="Мы на ярмарке мастеров" className="footerImg" />
+          <img src="./img/social/contact3.png" alt="Мы на ярмарке мастеров" className="footerImg" />
         </a>
       </div>
 

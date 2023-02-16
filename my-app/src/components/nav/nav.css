@@ -4,6 +4,8 @@ a{
   text-decoration: none;
 }
 
+
+
 .nav {
     position: absolute;
     width: 1300px;
@@ -15,44 +17,73 @@ a{
   
 .navRow {
     display: flex;
-    justify-content: flex-start;
-    align-items:flex-start;
     width: 1200px;
     height: 50px;
     position: relative;
-    top:10px;
+    top:0px;
 }
   
 .navLogo{
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
-    font-size: 28px;
+    font-size:40px;
     line-height: 38px;
-    color: var(--main-black);
+    color: var(--main-purpure);
     font-weight: bold;
     position: relative;
-    top:18px;
+    top:60px;
+    left: 530px;
 }
 
-.navLogotext{
+.navLogo:hover{
+  color:var(--main-black);
+}
+
+.navLogoLink{
+  color:var(--main-black);
+}
+
+.navLogoLink:hover{
+  color:var(--main-purpure)
+}
+
+.navLogoColumn{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 200px;
   height: 20px;
+}
+
+.navLogoText{
+  position: relative;
+  width: 200px;
+  height: 10px;
+  font-size:22px;
+  line-height: 30px;
+  top:20px;
+}
+
+.navLogoPhone{
+  width: 200px;
+  height: 10px;
   font-size: 22px;
   line-height: 30px;
-  top:18px;
+  top:0px;
 }
+
 
 
 .navHeart{
   position: relative;
-  left:950px;
-  top:40px;
+  left:900px;
+  top:50px;
 }
 
 .navBasket{
   position: relative;
-  left:1000px;
-  top:40px;
+  left:950px;
+  top:50px;
 }
 
 .navListBottom{
@@ -61,10 +92,10 @@ a{
   justify-content: flex-start;
   position: absolute;
   padding-left: -5px;
-  width: 1100px;
+  width: 1200px;
   height: 50px;
   top:120px;
-  left:-55px;
+  left:0px;
 }
 
 .navLine{
@@ -72,16 +103,18 @@ a{
   width: 1250px;
   border: 2px solid var(--main-purpure);
   left: 0px;
-  top:50px;
+  top:70px;
 }
 
 .navList{
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     top:0px;
     left: 0;
     width: 1200px;
     height: 40px;
-    background-color: var(--main-black);
     margin: 0;
     padding: 0;
     color: var(--main-white);
@@ -90,13 +123,7 @@ a{
   
   @media (min-width:992px){
     .navList{
-      list-style-type: none;
-      display: flex;
-      position: static;
-      width: auto;
-      margin: 0 auto;
-      background-color: var(--main-white);
-      color:var(--main-black);
+
   }
   }
   
@@ -109,10 +136,7 @@ a{
   
   @media (min-width:992px){
     .navItem{
-      margin-right: 30;
-      border-bottom: none;
-      background-color: none;
-      margin: 10px 50px;
+ 
   }
   }
 
@@ -124,56 +148,14 @@ a{
   
   .navLink {
     text-decoration: none;
-    color: inherit;
+    color:var(--main-black);
     width: 80px;
   }
   
-  .navLnk:hover{
-    color:var(--main-orange);
+  .navLink:hover{
+    color:var(--main-purpure);
   }
 
-  .navSelect{
-    width: 200px;
-    height: 30px;
-  }
-  
-  .navCard  {
-    margin-top:5px;
-    margin-left: auto;
-    margin-right: 5px;
-  }
-  
-  @media (min-width:992px){
-    .navCard{
-      margin-right: 0;
-  }
-  }
-  
-  .navCardLink{
-    position: relative;
-    margin: 5px;
-    left: -5px;
-    display: inline-block;
-    right: 25px;
-  }
-  
-  .navCardNumber{
-    position: absolute;
-    border-radius: 50%;
-    color:var(--main-white);
-    background-color: var(--main-purpure);
-    font-weight: bold;
-    font-size: 15px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-  
-  }
-  
-  .navCard > span{
-    margin-left: 20px;
-  }
   
 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import './main.css';
+import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
 
 
@@ -12,14 +13,11 @@ return(
         <div className="mainContent">
           <h1 className="mainTitle">VogulGems</h1>
           <div className="mainText">
-            <p>Творческая мастерская ювелира и камнереза!<br />Создаём уникальные украшения ручной работы с натуральными камнями</p>
+            <p>Создаём уникальные украшения ручной работы с натуральными камнями</p>
           </div>
-
-          <div className="mainBtn">
-            <a href="#" className="button">Подробнее</a>
-          </div>
+          <Link to="/about" className = "navLink"><div className="mainBtn"><a href="#" className="button">Подробнее</a></div></Link>
         </div>
-
+        
         <div className="mainPhoto">
           <a href="">
             <Link to="/pendants"> 

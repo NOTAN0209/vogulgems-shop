@@ -12,11 +12,14 @@ function Navigation (){
     <nav className ="nav">
    
       <div className ="navRow">
-         <Link to="/"> 
-          <a href="#" className="navLogo">VogulGems</a>
-          <h2 className="navLogoText">Нижний Тагил</h2>
-         </Link>
-  
+
+        <div className="navLogoColumn">
+          <a href="https://www.ntagil.org/" className="navLogoLink" target="_blank"><p className="navLogoText">Нижний Тагил</p></a> 
+          <a href="+79193965351" className="navLogoLink" target="_blank"><p className="navLogoPhone">+7 (919) 396-53-51</p></a> 
+        </div>
+
+        <Link to="/"> <a href="#" className="navLogo">VogulGems</a></Link>
+
          <div class="navHeart">                                 
           <svg class ="navHeartPicture" width="40" height="35" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M3.30841 2.95447C7.29791 -0.875449 13.7444 
@@ -71,6 +74,9 @@ function Navigation (){
           </li>
           <li className = "navItem">
             <Link to="/set"> <a href="#" className = "navLink">Комплекты</a></Link>
+          </li>
+          <li className = "navItem">
+            <Link to="/contact"> <a href="#" className = "navLink">Контакты</a></Link>
           </li>
         </ul>
       </div>     
