@@ -1,0 +1,31 @@
+.contact{
+  max-width: 1600px;
+  margin: 0 auto; 
+}
+
+.contactTitle{
+    position: relative;
+    top:250px;
+    left: 100px;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.contactList{
+  position: relative;
+  top:250px;
+  left: 100px;
+}
+
+.contactItem{
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+a{
+    color: var(--main-purpure);
+    font-weight:bold;
+}
+a:hover{
+    color:var(--main-black);
+}

@@ -11,8 +11,8 @@ function Footer (){
     <div className="footerColumn">
       <nav className="footerNav">
       <Link to="/about" className = ""> <a href="#">О нас</a></Link>
-        <a href="#">Наши контакты</a>
-        <a href="#">Условия сотрудничества</a>
+      <Link to="/contact" className = ""><a href="#">Наши контакты</a></Link>
+      <Link to="/" className = ""><a href="#">Главная страница</a></Link>
       </nav>
 
 

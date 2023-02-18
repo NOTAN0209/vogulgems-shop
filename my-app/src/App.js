@@ -8,6 +8,7 @@ import Earrings from "./components/earrings/earrings.jsx";
 import Rings from "./components/rings/rings.jsx";
 import Mosaic from "./components/mosaic/mosaic.jsx";
 import Electro from "./components/electro/electro.jsx";
+import Contacts from "./components/contact/contact.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
            <Route path="/rings" element={<Rings/>}/>
            <Route path="/mosaic" element={<Mosaic/>}/>
            <Route path="/electro" element={<Electro/>}/>
+           <Route path="/contact" element={<Contacts/>}/>
       </Routes>
     </BrowserRouter>
   );
