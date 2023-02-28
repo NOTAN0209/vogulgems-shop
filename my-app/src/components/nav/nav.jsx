@@ -78,6 +78,9 @@ function Navigation (){
           <li className = "navItem">
             <Link to="/contact"> <a href="#" className = "navLink">Контакты</a></Link>
           </li>
+          <li className = "navItem">
+            <Link to="/form"> <a href="#" className = "navLink">Заказать</a></Link>
+          </li>
         </ul>
       </div>     
     </nav>

@@ -12,7 +12,7 @@ function Footer (){
       <nav className="footerNav">
       <Link to="/about" className = ""> <a href="#">О нас</a></Link>
       <Link to="/contact" className = ""><a href="#">Наши контакты</a></Link>
-      <Link to="/" className = ""><a href="#">Главная страница</a></Link>
+      <Link to="/form" className = ""><a href="#">Заказать</a></Link>
       </nav>
 
 

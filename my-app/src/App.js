@@ -9,6 +9,8 @@ import Rings from "./components/rings/rings.jsx";
 import Mosaic from "./components/mosaic/mosaic.jsx";
 import Electro from "./components/electro/electro.jsx";
 import Contacts from "./components/contact/contact.jsx";
+import Form from "./components/form/form.jsx";
+import Sets from "./components/set/set.jsx"
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
            <Route path="/rings" element={<Rings/>}/>
            <Route path="/mosaic" element={<Mosaic/>}/>
            <Route path="/electro" element={<Electro/>}/>
+           <Route path="/set" element={<Sets/>}/>
            <Route path="/contact" element={<Contacts/>}/>
+           <Route path="/form" element={<Form/>}/>
       </Routes>
     </BrowserRouter>
   );

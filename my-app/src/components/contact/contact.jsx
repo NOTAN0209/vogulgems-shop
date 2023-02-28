@@ -2,7 +2,6 @@ import React from "react";
 import './contact.css';
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
-import Form from "../form/form.jsx";
 
 function Contact(){
 
@@ -17,7 +16,7 @@ function Contact(){
                 <li className="contactItem">E-mail: <a href="notan02@mail.ru" lassName="contactLink" target="_blank">Notan02@mail.ru</a></li>
                 <li className="contactItem">Наш адрес: г. Нижний Тагил, Свердловская область</li>
             </ul>
-            <Form />
+    
           <Footer />
         </div>
     )

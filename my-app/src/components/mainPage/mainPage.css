@@ -7,14 +7,14 @@
     --main-black: #000;
     --main-grey: #8e8e8e;
     --main-purpure2:rgba(247,36,99,0.5);
-  }
+}
   
-  *, *::after, *::before{
+*, *::after, *::before{
   box-sizing: border-box;
-  }
+}
   
-  body{
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
-  }
+body{
+  margin: 0;
+  font-family: 'Playfair Display', serif;   
+}
  

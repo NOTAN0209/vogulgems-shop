@@ -1,6 +1,10 @@
 import React from 'react';
 import './form.css';
 import emailjs from 'emailjs-com';
+import Navigation from "../nav/nav.jsx";
+import Footer from "../footer/footer.jsx";
+
+
 
 function ContactUs() {
 
@@ -16,15 +20,19 @@ function ContactUs() {
   }
 
   return (
-    <form className="contactForm" onSubmit={sendEmail}>
-        <label className="contactFormTitle">Имя и Фамилия</label>
-            <input className="contactFormName" placeholder="Ваше имя и фамилия" type="text" name="formName" />
-        <label className="contactFormTitle">Email</label>
-            <input className="contactFormEmail"  placeholder="Ваш почтовый ящик" type="email" name="formEmail" />
-      <label className="contactFormTitle">Сообщение</label>
-            <input className="contactFormMessage"  placeholder="Ваш заказ" type="textarea" name="formMessage" />
-      <input className="contactFormBtn" type="submit" value="Отправить" />
-    </form>
+    <div class="">
+      <Navigation />
+      <form className="contactForm" onSubmit={sendEmail}>
+          <label className="contactFormTitle">Имя и Фамилия</label>
+              <input className="contactFormName" placeholder="Ваше имя и фамилия" type="text" name="formName" />
+          <label className="contactFormTitle">Email</label>
+              <input className="contactFormEmail"  placeholder="Ваш почтовый ящик" type="email" name="formEmail" />
+        <label className="contactFormTitle">Сообщение</label>
+              <input className="contactFormMessage"  placeholder="Ваш заказ" type="textarea" name="formMessage" />
+        <input className="contactFormBtn" type="submit" value="Отправить" />
+      </form>
+      <Footer />
+    </div>
   );
 }
 export default ContactUs
