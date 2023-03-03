@@ -17,13 +17,13 @@ function Rings(){
                     <div className="product" key = {ring.row}>      
                     <img src={ring.src} alt={ring.alt} className="productImg" />
 
-                    <h4 className="productTitle">{ring.title} </h4>
+                    <p className="productTitle">{ring.title} </p>
+                    <div className="productLine"></div>
 
                     <ul className="productCharacteristics">
-                        <div className="productLine"></div>
-                        <li className="productMaterial">{ring.material}</li>
-                        <li className="productcSize">{ring.size}</li>
-                        <li className="productPrice">{ring.price}</li>                 
+                        <li className="productMaterial"><strong>Материал</strong>: {ring.material}</li>
+                        <li className="productcSize"><strong>Размер</strong>: {ring.size}</li>
+                        <li className="productPrice"><strong>Цена</strong>: {ring.price}</li>                 
                     </ul>
 
                     <Link to="/form" className="productButton"> Заказать </Link>

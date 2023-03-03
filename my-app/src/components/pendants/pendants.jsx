@@ -18,13 +18,14 @@ function Pendants(){
                 <div className="product" key = {pendant.row}>      
                   <img src={pendant.src} alt={pendant.alt} className="productImg" />
 
-                  <h4 className="productTitle">{pendant.title} </h4>
+                  <p className="productTitle">{pendant.title} </p>
 
-                  <ul className="productCharacteristics">
-                    <div className="productLine"></div>
-                    <li className="productMaterial">{pendant.material}</li>
-                    <li className="productcSize">{pendant.size}</li>
-                    <li className="productPrice">{pendant.price}</li>                 
+                  <div className="productLine"></div>
+
+                  <ul className="productCharacteristics">                 
+                    <li className="productMaterial"><strong>Материал</strong>: {pendant.material}</li>
+                    <li className="productcSize"><strong>Размер</strong>: {pendant.size}</li>
+                    <li className="productPrice"> <strong>Цена</strong>:{pendant.price}</li>                 
                   </ul>
 
                  <Link to="/form" className="productButton"> Заказать </Link>

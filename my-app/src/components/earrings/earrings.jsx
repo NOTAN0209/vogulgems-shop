@@ -11,18 +11,20 @@ function Earrings(){
     return(
     <div className="earrings">
         <Navigation />
-        <div className="earringsRow">
+            <div className="earringsRow">
               { earrings.map(( earring) => (           
                 <div className="product" key = {earring.row}>      
                   <img src={earring.src} alt={earring.alt} className="productImg" />
 
-                  <h4 className="productTitle">{earring.title} </h4>
+                  <p className="productTitle">{earring.title} </p>
+
+                  <div className="productLine"></div>
 
                   <ul className="productCharacteristics">
-                    <div className="productLine"></div>
-                    <li className="productMaterial">{earring.material}</li>
-                    <li className="productcSize">{earring.size}</li>
-                    <li className="productPrice">{earring.price}</li>                 
+                   
+                    <li className="productMaterial"><strong>Материал</strong>: {earring.material}</li>
+                    <li className="productcSize"><strong>Размер</strong>: {earring.size}</li>
+                    <li className="productPrice"><strong>Цена</strong>: {earring.price}</li>                 
                   </ul>
 
                  <Link to="/form" className="productButton"> Заказать </Link>

@@ -16,13 +16,14 @@ function Set(){
                 <div className="product" key = {set.row}>      
                   <img src={set.src} alt={set.alt} className="productImg" />
 
-                  <h4 className="productTitle">{set.title} </h4>
+                  <p className="productTitle">{set.title} </p>
+
+                  <div className="productLine"></div>
 
                   <ul className="productCharacteristics">
-                    <div className="productLine"></div>
-                    <li className="productMaterial">{set.material}</li>
-                    <li className="productcSize">{set.size}</li>
-                    <li className="productPrice">{set.price}</li>                 
+                    <li className="productMaterial"><strong>Материал</strong>:{set.material}</li>
+                    <li className="productcSize"><strong>Размер</strong>:{set.size}</li>
+                    <li className="productPrice"><strong>Цена</strong>:{set.price}</li>                 
                   </ul>
 
                  <Link to="/form" className="productButton"> Заказать </Link>

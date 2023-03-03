@@ -15,13 +15,15 @@ function Electro(){
                 <div className="product" key = {electro.row}>      
                   <img src={electro.src} alt={electro.alt} className="productImg" />
 
-                  <h4 className="productTitle">{electro.title} </h4>
+                  <p className="productTitle">{electro.title} </p>
+
+                  <div className="productLine"></div>
 
                   <ul className="productCharacteristics">
-                    <div className="productLine"></div>
-                    <li className="productMaterial">{electro.material}</li>
-                    <li className="productcSize">{electro.size}</li>
-                    <li className="productPrice">{electro.price}</li>                 
+                   
+                    <li className="productMaterial"><strong>Материал</strong>: {electro.material}</li>
+                    <li className="productcSize"><strong>Размер</strong>: {electro.size}</li>
+                    <li className="productPrice"><strong>Цена</strong>: {electro.price}</li>                 
                   </ul>
 
                  <Link to="/form" className="productButton"> Заказать </Link>

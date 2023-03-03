@@ -14,13 +14,15 @@ function Mosaic(){
                 <div className="product" key = {mosaic.row}>      
                   <img src={mosaic.src} alt={mosaic.alt} className="productImg" />
 
-                  <h4 className="productTitle">{mosaic.title} </h4>
+                  <p className="productTitle">{mosaic.title} </p>
+
+                  <div className="productLine"></div>
 
                   <ul className="productCharacteristics">
-                    <div className="productLine"></div>
-                    <li className="productMaterial">{mosaic.material}</li>
-                    <li className="productcSize">{mosaic.size}</li>
-                    <li className="productPrice">{mosaic.price}</li>                 
+                   
+                    <li className="productMaterial"><strong>Материал</strong>: {mosaic.material}</li>
+                    <li className="productcSize"><strong>Размер</strong>: {mosaic.size}</li>
+                    <li className="productPrice"> <strong>Цена</strong>:{mosaic.price}</li>                 
                   </ul>
 
                  <Link to="/form" className="productButton"> Заказать </Link>

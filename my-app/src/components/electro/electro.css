@@ -1,45 +1,42 @@
 .electroplanting{
- width: 100%;
+  position: relative;
+  width: 100%;
   height: 100%;
+
 }
 
 .electroplantingRow{
   display:flex;
   flex-direction: row;
   position: relative;
-  left: 150px;
-  right: 150px;
+  left: 23%;
+  right: 23%;
+  top:130px;
 }
-
 
 .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 300px;
-    height: 100%;
-    position: relative;
-    top:150px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+   
 @media (max-width:1024px){
   .product {
-    text-align: center;
-    left: 0px;
-    margin: 10px 0;
+   
   }
 }
-  
-
+   
 .productImg {
-  display: block;
-  margin-bottom: 5px;
-  width: 250px;
-  height: 310px;
+  
+  margin: 0 auto;
+  width:250px;
+  height: 300px;
   border-radius: 8%;
 }
-  
+   
 @media (max-width:1024px){
   .productImg {
     width: 220px;
@@ -47,91 +44,92 @@
     gap:10px;
   }
 }
-  
+   
 .productTitle {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 23px;
   line-height: 30px;
-  width: 250px;
-  height: 50px;
+  width: 90%;
+  height: 60px;
   color: var(--main-black);
   text-align: center;
-
 }
-  
+   
 @media (max-width:1024px){
-  .productTitle {
-  
+   .productTitle {
+   
   }
 }
-
+ 
 .productLine{
-  max-width: 200px;
+  width: 200px;
   border: 2px solid var(--main-purpure);
-  margin: 0 ;
-
+  margin: 0 auto;
 }
-  
+   
 .productCharacteristics {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 29px;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
   list-style-type: none;
   gap:10px;
+  top:0px;
+  border:2px var(--main-black);
 }
-  
+   
 @media (max-width:1024px){
     .productСharacteristics {
-    font-size: 18px;
   }
 }
-  
-
+   
+ 
 .productMaterial{
   position: relative;
-  width: 300px;
-  left: -50px;
+  width: 200px;
+  left: 0px; 
+  font-size: 20px; 
 }
-
+ 
 .productcSize{
   position: relative;
   width: 200px;
   left: 0px;
+  font-size: 20px;
 }
-
+ 
 .productPrice{
-  color: var(--main-purpure);
-  font-weight: bold;
+  position: relative;
+  width: 200px;
+  left: 0px;
+  font-size: 20px;
 }
-
+ 
 .productButton{
   font-family: 'Playfair Display', serif;
   font-style: normal;
   width: 200px;
   height:50px;
-  background-color: var(--main-grey);
-  color: var(--main-black);
+  background-color: var(--main-black);
+  color: var(--main-purpure);
   border-radius: 8px;
-  font-size: 35px;
+  font-size: 28px;
   text-align: center;
   position: relative;
-  left:50px;
+  left:15%;
   top:0px;
-  font-weight: 400;
-  transition: opacity 0.2s ease-in;
-  line-height: 30px;
-  padding-top: 10px;
+  font-weight: bold;
+  line-height: 35px;
+  padding-top: 5px;
 }
-
+ 
 .productButton:hover{
   background-color: var(--main-purpure);
   color: var(--main-white);
   font-size: 20px;
-  opacity: 0.8;
 }

@@ -58,23 +58,23 @@ function Navigation (){
             <Link to="/about" className = "navLink">О нас</Link>
           </li>
           <li className = "navItem">
-            <Link to="/pendants"> <a href="#" className = "navLink">Кулоны</a></Link>
-          </li>
-          <li className = "navItem">
-            <Link to="/earrings"> <a href="#" className = "navLink">Серьги</a></Link>
+            <Link to="/electro"> <a href="#" className = "navLink">Гальваника</a></Link>
           </li>
           <li className = "navItem">
             <Link to="/rings"> <a href="#" className = "navLink">Кольца</a></Link>
+          </li>            
+          <li className = "navItem">
+            <Link to="/set"> <a href="#" className = "navLink">Комплекты</a></Link>
+          </li>
+          <li className = "navItem">
+            <Link to="/pendants"> <a href="#" className = "navLink">Кулоны</a></Link>
           </li>
           <li className = "navItem">
             <Link to="/mosaic"> <a href="#" className = "navLink">Мозайка</a></Link>
           </li>
           <li className = "navItem">
-            <Link to="/electro"> <a href="#" className = "navLink">Гальваника</a></Link>
-          </li>
-          <li className = "navItem">
-            <Link to="/set"> <a href="#" className = "navLink">Комплекты</a></Link>
-          </li>
+            <Link to="/earrings"> <a href="#" className = "navLink">Серьги</a></Link>
+          </li>  
           <li className = "navItem">
             <Link to="/contact"> <a href="#" className = "navLink">Контакты</a></Link>
           </li>
