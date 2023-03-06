@@ -5,8 +5,9 @@
   height: 600px;
   display: flex;
   flex-direction: column;
-  left: 100px;
-  top:250px;
+  left: 35%;
+  right: 35%;
+  top:120px;
   gap: 15px;
 }
 

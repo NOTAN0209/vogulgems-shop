@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.css";
-import abouts from "./about.js"
 import Footer from "../footer/footer";
 import Navigation from '../nav/nav.jsx';
 
@@ -17,7 +16,7 @@ return (
 
       <h2 className="aboutTitle">История создания мастерской VogulGems</h2>
 
-          <p className="">Нашей мастерской уже больше 10 лет.
+          <p className="aboutText">Нашей мастерской уже больше 10 лет.
             За это время состав команды время от времени менялся.
             К нам приходили талантливые художники, но потом уходили в одиночное плаванье.
             Володя был со мной всегда.Один из основоположников мастерской "Вогул", талантливый камнерез, помощник и просто друг.
@@ -27,15 +26,55 @@ return (
     </div>
 
     <div className="aboutColumn">
-      {abouts.map((about) => (
-          <div className="aboutPost" key = {about.row}>
-            <img src={about.src} alt={about.alt} className="aboutImg" />
+          <div className="aboutPost">
+            <img src="./img/person/per1.jpg" alt="Михаил Карягин" className="aboutImg" />
               <div className="postContent">
-                <h4 className="postTitle">{about.title}</h4>
-                <p className="postText">{about.text}</p>
+                <h4 className="postTitle"><a href="https://vk.com/notan0209" target="_blank">Михаил Карягин</a></h4>
+                <p className="postText">Мастер по  художественной обработке металла</p>
               </div>
           </div>
-        ))}        
+
+          <div className="aboutPost">
+            <img src="./img/person/per2.jpg" alt="Владимир Сихряев" className="aboutImg" />
+              <div className="postContent">
+                <h4 className="postTitle"><a href="https://vk.com/bloodimir51" target="_blank">Владимир Сихряев</a></h4>
+                <p className="postText">Мастер по художественной обработке камня</p>
+              </div>
+          </div>
+
+          <div className="aboutPost">
+            <img src="./img/person/per3.jpg" alt="Выставки-ярмарки" className="aboutImg" />
+              <div className="postContent">
+                <h4 className="postTitle">Участвуем в выставках</h4>
+                <p className="postText">Минералогические и ювелирные ярмарки</p>
+              </div>
+          </div>
+
+          <div className="aboutPost">
+            <img src="./img/person/per4.jpg" alt="Добыча минералов" className="aboutImg" />
+              <div className="postContent">
+                <h4 className="postTitle">Добываем минералы</h4>
+                <p className="postText">Добыча минералов по всей стране</p>
+              </div>
+          </div>
+
+          <div className="aboutPost">
+            <img src="./img/person/per5.jpg" alt="Владимир и Михаил" className="aboutImg" />
+              <div className="postContent">
+                <h4 className="postTitle"></h4>
+                <p className="postText"></p>
+              </div>
+          </div>
+
+          <div className="aboutPost">
+            <img src="./img/person/per6.jpg" alt="Владимир и Михаил" className="aboutImg" />
+              <div className="postContent">
+                <h4 className="postTitle"></h4>
+                <p className="postText"></p>
+              </div>
+          </div>
+       
+            
     </div> 
   </div>
   <Footer />
