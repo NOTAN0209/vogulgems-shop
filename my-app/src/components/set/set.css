@@ -11,6 +11,13 @@
   right: 23%;
   top:130px;
 }
+
+@media (max-width:1024px){
+  .setRow {
+    left: 0;
+    right: 0;
+  }
+}
    
 .product {
   display: flex;

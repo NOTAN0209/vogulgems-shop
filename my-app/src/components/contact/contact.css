@@ -1,15 +1,36 @@
 .contact{
-  width: 100vw;
+  position: relative;
+  width: 100%;
   height: 100%;
 }
+
+@media (max-width:1024px){
+  .contactColumn {
+    left: 10%;
+    top:15%;
+  
+  }
+}
+
 
 .contactColumn{
   width: 65vw;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  left: 20%;
-  top:0px;
+  left: 30%;
+  top:10%;
 }
+
+@media (max-width:1024px){
+  .contactColumn {
+    left: 10%;
+    top:15%;
+  
+  }
+}
+
 
 .contactTitle{
   position: relative;

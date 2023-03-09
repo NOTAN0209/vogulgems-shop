@@ -11,6 +11,13 @@
   right: 23%;
   top:130px;
 }
+
+@media (max-width:1024px){
+  .pendantsRow {
+    left: 0;
+    right: 0;
+  }
+}
  
 .product {
   display: flex;
@@ -24,7 +31,7 @@
    
 @media (max-width:1024px){
   .product {
-   
+    left: .5rem;
   }
 }
    

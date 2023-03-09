@@ -1,12 +1,12 @@
 .about{
-  position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
   
 @media (max-width:1024px){
   .about{
- 
+    width: 100vw;
+    height: 100%;
     }
 }
 
@@ -16,18 +16,31 @@
   display:flex;
   flex-direction: row;
   position: relative;
-  left: 0px;
+  left: 5%;
   right: 0px;
   top:100px;
 }
+
+@media (max-width:1024px){
+  .aboutRow{
+    width: 100vw;
+    }
+}
+
 
 .aboutHeader{
   width: 63vw;
   height: 100%;
   position: relative;
-  top:0px;
-  left:20%;
+  top:5%;
+  left:15%;
+}
 
+@media (max-width:1024px){
+  .aboutHeader{
+    width: 100vw;
+    left:15%;
+    }
 }
 
 .aboutText{
@@ -36,32 +49,57 @@
   font-size: 1.5rem;
   line-height: 1.5;
 }
-.aboutTitle{
-    font-family: 'Noto Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 10px;
-    line-height: 56px;
+
+@media (max-width:1024px){
+  .aboutText{
+
     text-align: center;
+    }
+}
+ 
+
+.aboutTitle{
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+  line-height: 56px;
+  text-align: center;
 }
   
 @media (max-width:1024px){
   .aboutTitle{
-    font-size: 40px;
+    font-size:3rem;
+    text-align: center;
     }
 }
  
 .aboutColumn{
   width: 65vw;
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 8rem;
-  row-gap: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  row-gap: 5rem;
+  column-gap: 5rem;
   position: relative;
-  right:30%;
-  top:300px;
+  right:35%;
+  top:20rem;
+}
+
+@media (max-width:1024px){
+  .aboutColumn{
+    width:100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    left:-45%;
+    right:0;
+    top:35rem;
+    margin-bottom: 10%;
+    }
 }
   
 .aboutImg{
@@ -74,7 +112,8 @@
   
 @media (max-width:1024px){
   .aboutImg{
- 
+    width: 200%;
+    height: 200%;
     }
 }
   
@@ -85,23 +124,32 @@
 }
   
 .aboutPost{
-  max-width: 300px;
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
     
 @media (max-width:1024px){
   .aboutPost{
-    max-width: 400px;
+    width:70%;
+    padding-right: 10%;
   }
 }
 
 .postContent{
-  max-width: 370px;
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
+
+@media (max-width:1024px){
+  .aboutPost{
+  
+  
+  }
+}
+
     
 .postTitle{
   font-family: 'Playfair Display', serif;
@@ -113,7 +161,6 @@
 }
     
 .postText{
-  margin: 0 0 10px;
   font-style: normal;
   font-weight:normal;
   font-size: 1.5em;
