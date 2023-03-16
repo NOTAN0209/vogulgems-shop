@@ -1,5 +1,5 @@
 import React from "react";
-import './rings.css';
+import '../mainPage/product.css';
 import rings from "./rings.js";
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
@@ -10,9 +10,9 @@ function Rings(){
 
 
     return(
-        <div className="rings">
+        <div className="products">
             <Navigation />
-            <div className="earringsRow">
+            <div className="productsRow">
                 { rings.map(( ring) => (           
                     <div className="product" key = {ring.row}>      
                     <img src={ring.src} alt={ring.alt} className="productImg" />

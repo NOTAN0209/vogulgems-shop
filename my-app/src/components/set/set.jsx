@@ -1,5 +1,5 @@
 import React from "react";
-import './set.css';
+import '../mainPage/product.css';
 import sets from "./set.js";
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 function Set(){
 
     return(
-    <div className="set">
+    <div className="products">
         <Navigation />
-        <div className="setRow">
+        <div className="productsRow">
               { sets.map(( set) => (           
                 <div className="product" key = {set.row}>      
                   <img src={set.src} alt={set.alt} className="productImg" />

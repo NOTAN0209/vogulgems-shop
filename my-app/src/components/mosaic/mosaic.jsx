@@ -1,5 +1,5 @@
 import React from "react";
-import './mosaic.css';
+import '../mainPage/product.css';
 import mosaics from "./mosaic.js"
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 function Mosaic(){
      return(
-        <div className="mosaic">
+        <div className="products">
             <Navigation />
-            <div className="mosaicRow">
+            <div className="productsRow">
               { mosaics.map((mosaic) => (           
                 <div className="product" key = {mosaic.row}>      
                   <img src={mosaic.src} alt={mosaic.alt} className="productImg" />

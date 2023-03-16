@@ -1,5 +1,5 @@
 import React from "react";
-import './electro.css';
+import '../mainPage/product.css';
 import electros from "./electro.js";
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 function Electro(){
 
     return(
-        <div className="electroplanting">
+        <div className="products">
             <Navigation/>
-            <div className="electroplantingRow">
+            <div className="productsRow">
               {electros.map((electro) => (           
                 <div className="product" key = {electro.row}>      
                   <img src={electro.src} alt={electro.alt} className="productImg" />

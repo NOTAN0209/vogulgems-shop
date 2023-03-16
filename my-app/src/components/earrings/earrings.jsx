@@ -1,5 +1,5 @@
 import React from "react";
-import './earrings.css';
+import '../mainPage/product.css';
 import earrings from "./earrings.js";
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 function Earrings(){
 
     return(
-    <div className="earrings">
+    <div className="products">
         <Navigation />
-            <div className="earringsRow">
+            <div className="productsRow">
               { earrings.map(( earring) => (           
                 <div className="product" key = {earring.row}>      
                   <img src={earring.src} alt={earring.alt} className="productImg" />

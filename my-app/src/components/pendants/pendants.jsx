@@ -1,19 +1,16 @@
 import React from "react";
-import './pendants.css';
+import '../mainPage/product.css';
 import pendants from "./pendants.js";
 import Navigation from "../nav/nav.jsx";
 import Footer from "../footer/footer.jsx";
 import { Link } from "react-router-dom";
 
-
-
 function Pendants(){
 
-
  return(
-    <div className="pendants">
+    <div className="products">
         <Navigation />
-        <div className="pendantsRow">
+        <div className="productsRow">
               {pendants.map(( pendant) => (           
                 <div className="product" key = {pendant.row}>      
                   <img src={pendant.src} alt={pendant.alt} className="productImg" />
