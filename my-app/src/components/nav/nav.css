@@ -172,7 +172,6 @@ a{
   }
 }
 
-
 .navList{
     position: relative;
     display: flex;
@@ -189,11 +188,6 @@ a{
     z-index: 9;
 }
   
-  @media (min-width:992px){
-    .navList{
-
-  }
-  }
   
   .navItem {
     display: block;
@@ -202,12 +196,6 @@ a{
     width: 100%;
   }
   
-  @media (min-width:992px){
-    .navItem{
- 
-  }
-  }
-
 
   /*у последнего элемента нет отступа*/
   .navItem:last-child {
