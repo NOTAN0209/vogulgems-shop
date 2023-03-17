@@ -20,7 +20,7 @@
   flex-direction: column;
   position: relative;
   left: 30%;
-  top:10%;
+  top:16%;
 }
 
 @media (max-width:1024px){

@@ -14,11 +14,15 @@ function Navigation (){
       <div className ="navRow">
 
         <div className="navLogoColumn">
-          <a href="https://www.ntagil.org/" className="navLogoLink" target="_blank"><p className="navLogoText">Нижний Тагил</p></a> 
-          <a href="+79193965351" className="navLogoLink" target="_blank"><p className="navLogoPhone">+7 (919) 396-53-51</p></a> 
+          <a href="https://www.ntagil.org/" className="navLogoLink" target="_blank" rel="noreferrer"><p className="navLogoText">Нижний Тагил</p></a> 
+          <a href="+79193965351" className="navLogoLink" target="_blank"  rel="noreferrer"><p className="navLogoPhone">+7 (919) 396-53-51</p></a> 
         </div>
 
-        <Link to="/"> <a href="#" className="navLogo">VogulGems</a></Link>
+        <div className="burgerBtn">
+          <span />
+        </div>
+
+        <Link to="/"> <a href="/#" className="navLogo" rel="noreferrer">VogulGems</a></Link>
 
          <div class="navHeart">                                 
           <svg class ="navHeartPicture" width="40" height="35" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,37 +53,39 @@ function Navigation (){
           </svg>     
         </div>
       </div>  
-
-      <div className="navLine"></div>
+      
+      <div className="navLine"></div> 
 
       <div className="navListBottom">
+
+
         <ul className = "navList">
           <li className = "navItem">
             <Link to="/about" className = "navLink">О нас</Link>
           </li>
           <li className = "navItem">
-            <Link to="/electro"> <a href="#" className = "navLink">Гальваника</a></Link>
+            <Link to="/electro"> <a href="/#" className = "navLink" rel="noreferrer">Гальваника</a></Link>
           </li>
           <li className = "navItem">
-            <Link to="/rings"> <a href="#" className = "navLink">Кольца</a></Link>
+            <Link to="/rings"> <a href="/#" className = "navLink" rel="noreferrer">Кольца</a></Link>
           </li>            
           <li className = "navItem">
-            <Link to="/set"> <a href="#" className = "navLink">Комплекты</a></Link>
+            <Link to="/set"> <a href="/#" className = "navLink" rel="noreferrer">Комплекты</a></Link>
           </li>
           <li className = "navItem">
-            <Link to="/pendants"> <a href="#" className = "navLink">Кулоны</a></Link>
+            <Link to="/pendants"> <a href="/#" className = "navLink" rel="noreferrer">Кулоны</a></Link>
           </li>
           <li className = "navItem">
-            <Link to="/mosaic"> <a href="#" className = "navLink">Мозайка</a></Link>
+            <Link to="/mosaic"> <a href="/#" className = "navLink" rel="noreferrer">Мозайка</a></Link>
           </li>
           <li className = "navItem">
-            <Link to="/earrings"> <a href="#" className = "navLink">Серьги</a></Link>
+            <Link to="/earrings"> <a href="/#" className = "navLink" rel="noreferrer">Серьги</a></Link>
           </li>  
           <li className = "navItem">
-            <Link to="/contact"> <a href="#" className = "navLink">Контакты</a></Link>
+            <Link to="/contact"> <a href="/#" className = "navLink" rel="noreferrer">Контакты</a></Link>
           </li>
           <li className = "navItem">
-            <Link to="/form"> <a href="#" className = "navLink">Заказать</a></Link>
+            <Link to="/form"> <a href="/#" className = "navLink" rel="noreferrer">Заказать</a></Link>
           </li>
         </ul>
       </div>     
