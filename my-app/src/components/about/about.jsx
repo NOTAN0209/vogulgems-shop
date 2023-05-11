@@ -29,7 +29,7 @@ return (
           <div className="aboutPost">
             <img src="./img/person/per1.jpg" alt="Михаил Карягин" className="aboutImg" />
               <div className="postContent">
-                <h4 className="postTitle"><a href="https://vk.com/notan0209" target="_blank">Михаил Карягин</a></h4>
+                <h4 className="postTitle"><a href="https://vk.com/notan0209" target="_blank"  rel="noreferrer">Михаил Карягин</a></h4>
                 <p className="postText">Мастер по  художественной обработке металла</p>
               </div>
           </div>
@@ -37,7 +37,7 @@ return (
           <div className="aboutPost">
             <img src="./img/person/per2.jpg" alt="Владимир Сихряев" className="aboutImg" />
               <div className="postContent">
-                <h4 className="postTitle"><a href="https://vk.com/bloodimir51" target="_blank">Владимир Сихряев</a></h4>
+                <h4 className="postTitle"><a href="https://vk.com/bloodimir51" target="_blank"  rel="noreferrer">Владимир Сихряев</a></h4>
                 <p className="postText">Мастер по художественной обработке камня</p>
               </div>
           </div>
@@ -58,22 +58,7 @@ return (
               </div>
           </div>
 
-          <div className="aboutPost">
-            <img src="./img/person/per5.jpg" alt="Владимир и Михаил" className="aboutImg" />
-              <div className="postContent">
-                <h4 className="postTitle"></h4>
-                <p className="postText"></p>
-              </div>
-          </div>
-
-          <div className="aboutPost">
-            <img src="./img/person/per6.jpg" alt="Владимир и Михаил" className="aboutImg" />
-              <div className="postContent">
-                <h4 className="postTitle"></h4>
-                <p className="postText"></p>
-              </div>
-          </div>
-       
+     
             
     </div> 
   </div>
